@@ -1,0 +1,47 @@
+{
+  "name": "peasy-audio-js",
+  "version": "0.1.1",
+  "description": "Audio processing library for Node.js — convert, trim, merge, normalize, fade, speed. FFmpeg-powered, TypeScript-first.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "audio",
+    "mp3",
+    "wav",
+    "ffmpeg",
+    "convert",
+    "trim",
+    "merge",
+    "peasy"
+  ],
+  "author": "Peasy Tools",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/peasytools/peasy-audio-js.git"
+  },
+  "homepage": "https://peasyaudio.com",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1",
+    "tsup": "^8.0",
+    "typescript": "^5.7",
+    "vitest": "^3.0"
+  }
+}
