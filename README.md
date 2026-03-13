@@ -1,6 +1,6 @@
-# peasy-audio-js
+# peasy-audio
 
-[![npm](https://img.shields.io/npm/v/peasy-audio-js)](https://www.npmjs.com/package/peasy-audio-js)
+[![npm](https://img.shields.io/npm/v/peasy-audio)](https://www.npmjs.com/package/peasy-audio)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -11,7 +11,7 @@ Built from [PeasyAudio](https://peasyaudio.com), a free online audio toolkit wit
 > **Try the interactive tools at [peasyaudio.com](https://peasyaudio.com)** -- audio conversion, trimming, merging, normalization, and analysis
 
 <p align="center">
-  <img src="demo.gif" alt="peasy-audio-js demo — audio info, format conversion, and volume operations in Node.js" width="800">
+  <img src="demo.gif" alt="peasy-audio demo — audio info, format conversion, and volume operations in Node.js" width="800">
 </p>
 
 ## Table of Contents
@@ -33,7 +33,7 @@ Built from [PeasyAudio](https://peasyaudio.com), a free online audio toolkit wit
 
 ## Prerequisites
 
-peasy-audio-js uses FFmpeg under the hood. Install it before using this library:
+peasy-audio uses FFmpeg under the hood. Install it before using this library:
 
 | Platform | Command |
 |----------|---------|
@@ -45,13 +45,13 @@ peasy-audio-js uses FFmpeg under the hood. Install it before using this library:
 ## Install
 
 ```bash
-npm install peasy-audio-js
+npm install peasy-audio
 ```
 
 ## Quick Start
 
 ```typescript
-import { info, convert, trim, merge, normalize } from "peasy-audio-js";
+import { info, convert, trim, merge, normalize } from "peasy-audio";
 
 // Get audio file metadata
 const metadata = await info("song.mp3");
@@ -77,7 +77,7 @@ const normalized = await normalize("quiet-recording.mp3");
 Every audio file has metadata -- duration, sample rate, channels, bitrate, and codec information. The `info()` function uses FFprobe to extract this data without decoding the entire file, making it fast even for large files.
 
 ```typescript
-import { info } from "peasy-audio-js";
+import { info } from "peasy-audio";
 
 // Extract audio metadata using FFprobe
 const meta = await info("podcast.mp3");
@@ -104,7 +104,7 @@ Audio format conversion transforms audio data between container formats and code
 | M4A | `.m4a` | iTunes, Apple Music |
 
 ```typescript
-import { convert } from "peasy-audio-js";
+import { convert } from "peasy-audio";
 
 // Convert MP3 to WAV for editing
 const wav = await convert("music.mp3", { format: "wav" });
@@ -130,7 +130,7 @@ Learn more: [Peasy Audio Tools](https://peasyaudio.com) · [Glossary](https://pe
 Audio trimming extracts a segment by specifying start time and duration or end time. Merging concatenates multiple audio files sequentially into a single output file.
 
 ```typescript
-import { trim, merge } from "peasy-audio-js";
+import { trim, merge } from "peasy-audio";
 
 // Extract a 30-second segment starting at 1 minute
 const clip = await trim("podcast.mp3", { start: 60, duration: 30 });
@@ -153,7 +153,7 @@ Learn more: [Peasy Audio Tools](https://peasyaudio.com) · [Glossary](https://pe
 Audio normalization adjusts the overall volume level to a target loudness, measured in dBFS (decibels relative to full scale). The EBU R128 standard defines target loudness at -23 LUFS for broadcast, while streaming platforms typically target -14 LUFS.
 
 ```typescript
-import { normalize, changeVolume } from "peasy-audio-js";
+import { normalize, changeVolume } from "peasy-audio";
 
 // Normalize volume using FFmpeg loudnorm filter
 const normalized = await normalize("quiet-recording.mp3");
@@ -172,7 +172,7 @@ Learn more: [Peasy Audio Tools](https://peasyaudio.com) · [Glossary](https://pe
 Apply fade effects, speed changes, reversal, and generate silence programmatically. These operations use FFmpeg audio filters for sample-accurate processing.
 
 ```typescript
-import { fade, speed, reverseAudio, silence } from "peasy-audio-js";
+import { fade, speed, reverseAudio, silence } from "peasy-audio";
 
 // Apply 3-second fade in and 5-second fade out
 const faded = await fade("song.mp3", { fadeIn: 3, fadeOut: 5 });
@@ -204,7 +204,7 @@ import type {
   SpeedOptions,
   VolumeOptions,
   SilenceOptions,
-} from "peasy-audio-js";
+} from "peasy-audio";
 
 // AudioFormat — "mp3" | "wav" | "ogg" | "flac" | "aac" | "m4a"
 const format: AudioFormat = "mp3";
@@ -247,14 +247,14 @@ The Python package provides the same 12 audio operations with CLI and pydub engi
 
 | Package | PyPI | npm | Description |
 |---------|------|-----|-------------|
-| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | [npm](https://www.npmjs.com/package/peasy-pdf-js) | PDF merge, split, compress, rotate, watermark |
-| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image-js) | Image resize, crop, compress, convert, watermark |
-| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext-js) | Text analysis, case conversion, slugs, word count |
-| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css-js) | CSS gradients, shadows, flexbox, grid generators |
-| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress-js) | ZIP, gzip, brotli, deflate compression |
-| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document-js) | Markdown, HTML, CSV, JSON, YAML conversion |
-| **peasy-audio** | [PyPI](https://pypi.org/project/peasy-audio/) | **[npm](https://www.npmjs.com/package/peasy-audio-js)** | **Audio convert, trim, merge, normalize, effects** |
-| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | [npm](https://www.npmjs.com/package/peasy-video-js) | Video trim, resize, thumbnails, GIF conversion |
+| peasy-pdf | [PyPI](https://pypi.org/project/peasy-pdf/) | [npm](https://www.npmjs.com/package/peasy-pdf) | PDF merge, split, compress, rotate, watermark |
+| peasy-image | [PyPI](https://pypi.org/project/peasy-image/) | [npm](https://www.npmjs.com/package/peasy-image) | Image resize, crop, compress, convert, watermark |
+| peasytext | [PyPI](https://pypi.org/project/peasytext/) | [npm](https://www.npmjs.com/package/peasytext) | Text analysis, case conversion, slugs, word count |
+| peasy-css | [PyPI](https://pypi.org/project/peasy-css/) | [npm](https://www.npmjs.com/package/peasy-css) | CSS gradients, shadows, flexbox, grid generators |
+| peasy-compress | [PyPI](https://pypi.org/project/peasy-compress/) | [npm](https://www.npmjs.com/package/peasy-compress) | ZIP, gzip, brotli, deflate compression |
+| peasy-document | [PyPI](https://pypi.org/project/peasy-document/) | [npm](https://www.npmjs.com/package/peasy-document) | Markdown, HTML, CSV, JSON, YAML conversion |
+| **peasy-audio** | [PyPI](https://pypi.org/project/peasy-audio/) | **[npm](https://www.npmjs.com/package/peasy-audio)** | **Audio convert, trim, merge, normalize, effects** |
+| peasy-video | [PyPI](https://pypi.org/project/peasy-video/) | [npm](https://www.npmjs.com/package/peasy-video) | Video trim, resize, thumbnails, GIF conversion |
 
 Part of the [Peasy](https://peasytools.com) developer tools ecosystem.
 
