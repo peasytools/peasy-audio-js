@@ -1,6 +1,6 @@
 # peasy-audio
 
-[![npm](https://img.shields.io/npm/v/peasy-audio)](https://www.npmjs.com/package/peasy-audio)
+[![npm version](https://agentgif.com/badge/npm/peasy-audio/version.svg)](https://www.npmjs.com/package/peasy-audio)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
