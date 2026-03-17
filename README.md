@@ -90,7 +90,7 @@ console.log(meta.bitrate);    // 320000 (bits/sec)
 console.log(meta.format);     // "mp3"
 ```
 
-Learn more: [Peasy Audio Tools](https://peasyaudio.com) · [Glossary](https://peasytools.com/glossary/)
+Learn more: [Audio Format Guide: MP3, AAC, FLAC, WAV, OGG](https://peasyaudio.com/guides/audio-format-guide-mp3-aac-flac-wav-ogg/) · [What is Bitrate?](https://peasyaudio.com/glossary/bitrate/) · [What is Sample Rate?](https://peasyaudio.com/glossary/sample-rate/)
 
 ### Format Conversion
 
@@ -125,7 +125,7 @@ const mono = await convert("stereo.wav", {
 });
 ```
 
-Learn more: [Peasy Audio Tools](https://peasyaudio.com) · [Glossary](https://peasytools.com/glossary/)
+Learn more: [Audio Format Comparison](https://peasyaudio.com/guides/audio-format-comparison/) · [Lossless vs Lossy Audio](https://peasyaudio.com/guides/lossless-vs-lossy-audio-guide/) · [What is an Audio Codec?](https://peasyaudio.com/glossary/audio-codec/)
 
 ### Trimming & Merging
 
@@ -148,7 +148,7 @@ const combined = await merge([
 ]);
 ```
 
-Learn more: [Peasy Audio Tools](https://peasyaudio.com) · [Glossary](https://peasytools.com/glossary/)
+Learn more: [How to Trim & Edit Audio in Browser](https://peasyaudio.com/guides/trim-edit-audio-browser/) · [What is Clipping?](https://peasyaudio.com/glossary/clipping/) · [What is Decibel?](https://peasyaudio.com/glossary/decibel/)
 
 ### Volume & Normalization
 
@@ -167,7 +167,7 @@ const louder = await changeVolume("track.mp3", { change: 6 });
 const softer = await changeVolume("loud-track.mp3", { change: -3 });
 ```
 
-Learn more: [Peasy Audio Tools](https://peasyaudio.com) · [Glossary](https://peasytools.com/glossary/)
+Learn more: [Audio Bitrate & Quality Guide](https://peasyaudio.com/guides/audio-bitrate-quality-guide/) · [What is Normalize?](https://peasyaudio.com/glossary/normalize/) · [What is Dynamic Range?](https://peasyaudio.com/glossary/dynamic-range/)
 
 ### Audio Effects
 
@@ -192,7 +192,7 @@ const reversed = await reverseAudio("sample.mp3");
 const gap = await silence({ duration: 5, format: "wav", sampleRate: 44100 });
 ```
 
-Learn more: [Peasy Audio Tools](https://peasyaudio.com) · [Glossary](https://peasytools.com/glossary/)
+Learn more: [Podcast Audio Quality Best Practices](https://peasyaudio.com/guides/podcast-audio-quality-best-practices/) · [What is Reverb?](https://peasyaudio.com/glossary/reverb/) · [What is Frequency?](https://peasyaudio.com/glossary/frequency/)
 
 ## TypeScript Types
 
@@ -271,10 +271,10 @@ Full API documentation at [peasyaudio.com/developers/](https://peasyaudio.com/de
 
 ## Learn More
 
-- **Tools**: [Audio BPM Calculator](https://peasyaudio.com/audio/audio-bpm/) · [Audio Frequency Calculator](https://peasyaudio.com/audio/audio-freq/) · [Audio Delay Calculator](https://peasyaudio.com/audio/audio-delay/) · [All Tools](https://peasyaudio.com/)
-- **Guides**: [Audio Format Comparison](https://peasyaudio.com/guides/audio-format-comparison/) · [Lossless vs Lossy Audio](https://peasyaudio.com/guides/lossless-vs-lossy-audio-guide/) · [All Guides](https://peasyaudio.com/guides/)
-- **Glossary**: [Bitrate](https://peasyaudio.com/glossary/bitrate/) · [Audio Codec](https://peasyaudio.com/glossary/audio-codec/) · [Clipping](https://peasyaudio.com/glossary/clipping/) · [All Terms](https://peasyaudio.com/glossary/)
-- **Formats**: [MP3](https://peasyaudio.com/formats/mp3/) · [FLAC](https://peasyaudio.com/formats/flac/) · [All Formats](https://peasyaudio.com/formats/)
+- **Tools**: [Audio BPM Calculator](https://peasyaudio.com/audio/audio-bpm/) · [Audio Frequency Calculator](https://peasyaudio.com/audio/audio-freq/) · [Audio Delay Calculator](https://peasyaudio.com/audio/audio-delay/) · [Audio dB Calculator](https://peasyaudio.com/audio/audio-db/) · [Audio File Size Calculator](https://peasyaudio.com/audio/audio-filesize/) · [Audio Loudness Calculator](https://peasyaudio.com/audio/audio-loudness/) · [All Audio Tools](https://peasyaudio.com/)
+- **Guides**: [Audio Format Comparison](https://peasyaudio.com/guides/audio-format-comparison/) · [Lossless vs Lossy Audio](https://peasyaudio.com/guides/lossless-vs-lossy-audio-guide/) · [Audio Bitrate & Quality Guide](https://peasyaudio.com/guides/audio-bitrate-quality-guide/) · [Audio Format Guide: MP3, AAC, FLAC, WAV, OGG](https://peasyaudio.com/guides/audio-format-guide-mp3-aac-flac-wav-ogg/) · [Podcast Audio Quality Best Practices](https://peasyaudio.com/guides/podcast-audio-quality-best-practices/) · [How to Convert Between Audio Formats](https://peasyaudio.com/guides/convert-between-audio-formats/) · [All Guides](https://peasyaudio.com/guides/)
+- **Glossary**: [Sample Rate](https://peasyaudio.com/glossary/sample-rate/) · [Bitrate](https://peasyaudio.com/glossary/bitrate/) · [Audio Codec](https://peasyaudio.com/glossary/audio-codec/) · [Decibel](https://peasyaudio.com/glossary/decibel/) · [Normalize](https://peasyaudio.com/glossary/normalize/) · [Dynamic Range](https://peasyaudio.com/glossary/dynamic-range/) · [Clipping](https://peasyaudio.com/glossary/clipping/) · [PCM](https://peasyaudio.com/glossary/pcm/) · [All Terms](https://peasyaudio.com/glossary/)
+- **Formats**: [MP3](https://peasyaudio.com/formats/mp3/) · [WAV](https://peasyaudio.com/formats/wav/) · [FLAC](https://peasyaudio.com/formats/flac/) · [OGG](https://peasyaudio.com/formats/ogg/) · [AAC](https://peasyaudio.com/formats/aac/) · [All Formats](https://peasyaudio.com/formats/)
 - **API**: [REST API Docs](https://peasyaudio.com/developers/) · [OpenAPI Spec](https://peasyaudio.com/api/openapi.json)
 
 ## Also Available
