@@ -271,10 +271,10 @@ Full API documentation at [peasyaudio.com/developers/](https://peasyaudio.com/de
 
 ## Learn More
 
-- **Tools**: [Audio Convert](https://peasyaudio.com/tools/audio-convert/) · [Audio Trim](https://peasyaudio.com/tools/audio-trim/) · [Audio Merge](https://peasyaudio.com/tools/audio-merge/) · [All Tools](https://peasyaudio.com/)
-- **Guides**: [Audio Conversion Guide](https://peasyaudio.com/guides/convert/) · [All Guides](https://peasyaudio.com/guides/)
-- **Glossary**: [MP3](https://peasyaudio.com/glossary/mp3/) · [WAV](https://peasyaudio.com/glossary/wav/) · [All Terms](https://peasyaudio.com/glossary/)
-- **Formats**: [MP3](https://peasyaudio.com/formats/mp3/) · [WAV](https://peasyaudio.com/formats/wav/) · [All Formats](https://peasyaudio.com/formats/)
+- **Tools**: [Audio BPM Calculator](https://peasyaudio.com/audio/audio-bpm/) · [Audio Frequency Calculator](https://peasyaudio.com/audio/audio-freq/) · [Audio Delay Calculator](https://peasyaudio.com/audio/audio-delay/) · [All Tools](https://peasyaudio.com/)
+- **Guides**: [Audio Format Comparison](https://peasyaudio.com/guides/audio-format-comparison/) · [Lossless vs Lossy Audio](https://peasyaudio.com/guides/lossless-vs-lossy-audio-guide/) · [All Guides](https://peasyaudio.com/guides/)
+- **Glossary**: [Bitrate](https://peasyaudio.com/glossary/bitrate/) · [Audio Codec](https://peasyaudio.com/glossary/audio-codec/) · [Clipping](https://peasyaudio.com/glossary/clipping/) · [All Terms](https://peasyaudio.com/glossary/)
+- **Formats**: [MP3](https://peasyaudio.com/formats/mp3/) · [FLAC](https://peasyaudio.com/formats/flac/) · [All Formats](https://peasyaudio.com/formats/)
 - **API**: [REST API Docs](https://peasyaudio.com/developers/) · [OpenAPI Spec](https://peasyaudio.com/api/openapi.json)
 
 ## Also Available
