@@ -3,6 +3,7 @@
 [![npm version](https://agentgif.com/badge/npm/peasy-audio/version.svg)](https://www.npmjs.com/package/peasy-audio)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://agentgif.com/badge/github/peasytools/peasy-audio-js/stars.svg)](https://github.com/peasytools/peasy-audio-js)
 
 Audio processing library for Node.js -- convert between 6 formats (MP3, WAV, OGG, FLAC, AAC, M4A), trim segments, merge files, normalize volume, apply fade effects, adjust speed, and generate silence. FFmpeg-powered, TypeScript-first with full type safety.
 
