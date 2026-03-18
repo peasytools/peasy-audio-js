@@ -1,7 +1,7 @@
 {
   "name": "peasy-audio",
-  "version": "0.2.0",
-  "description": "Audio processing library for Node.js \u2014 convert, trim, merge, normalize, fade, speed. FFmpeg-powered, TypeScript-first.",
+  "version": "0.2.1",
+  "description": "Audio processing library for Node.js — convert, trim, merge, normalize, fade, speed. FFmpeg-powered, TypeScript-first.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
