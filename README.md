@@ -12,7 +12,7 @@ Built from [PeasyAudio](https://peasyaudio.com), a free online audio toolkit wit
 > **Try the interactive tools at [peasyaudio.com](https://peasyaudio.com)** -- audio conversion, trimming, merging, normalization, and analysis
 
 <p align="center">
-  <img src="demo.gif" alt="peasy-audio demo — audio info, format conversion, and volume operations in Node.js" width="800">
+  <a href="https://agentgif.com/nNSRoJj5"><img src="https://media.agentgif.com/nNSRoJj5.gif" alt="peasy-audio demo — audio info, format conversion, and volume operations in Node.js" width="800"></a>
 </p>
 
 ## Table of Contents
